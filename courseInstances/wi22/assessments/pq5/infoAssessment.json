@@ -51,7 +51,7 @@
             "bestQuestions": 1,
             "maxPoints": 1,
             "questions": [
-                {"id": "comb/binom1-1", "points": 1},
+                {"id": "comb/binom1-1", "points": 1}
             ]
         },
         {
