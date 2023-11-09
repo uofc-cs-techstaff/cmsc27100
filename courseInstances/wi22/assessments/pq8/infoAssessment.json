@@ -1,0 +1,35 @@
+{
+    "uuid": "c8a4f362-c1a1-4a32-b4cf-aa97803601d9",
+    "type": "Homework",
+    "title": "More Graphs",
+    "set": "Practice Quiz",
+    "number": "8",
+    "allowAccess": [
+        {
+            "credit": 100,
+            "startDate": "2022-03-02T00:00:01",
+            "endDate": "2022-03-16T23:59:59"
+        },
+        {
+            "uids": ["mkietzman@UCHICAGO.EDU","timng@uchicago.edu"],
+            "credit": 100,
+            "startDate": "2022-01-12T00:00:01",
+            "endDate": "2022-03-24T23:59:59"
+        }
+    ],
+    "shuffleQuestions": true,
+     "zones": [
+        {
+            "title": "Graphs",
+            "questions": [
+                {"id": "graph/deg1", "points": 1},
+                {"id": "graph/cuts1", "points": 1},
+                {"id": "graph/regular1", "points": 1},
+                {"id": "graph/tree1", "points": 1},
+                {"id": "graph/tree2", "points": 1},
+                {"id": "graph/forest", "points": 1},
+                {"id": "graph/path1", "points": 1}
+            ]
+        }
+    ]
+}

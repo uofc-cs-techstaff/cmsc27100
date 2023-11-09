@@ -1,0 +1,57 @@
+{
+    "uuid": "f5590ef1-3554-468a-9638-644ad558b601",
+    "type": "Homework",
+    "title": "Sets and Divisibility",
+    "set": "Practice Quiz",
+    "number": "2",
+    "allowAccess": [
+        {
+            "credit": 100,
+            "startDate": "2022-01-19T00:00:01",
+            "endDate": "2022-03-16T23:59:59"
+        },
+        {
+            "uids": ["mkietzman@UCHICAGO.EDU","timng@uchicago.edu"],
+            "credit": 100,
+            "startDate": "2022-01-12T00:00:01",
+            "endDate": "2022-03-24T23:59:59"
+        }
+    ],
+    "shuffleQuestions": true,
+    "zones": [
+        {
+            "title": "Sets",
+            "questions": [
+                {"id": "sets/operations", "points": 1},
+                {"id": "sets/functions", "points": 1}
+            ]
+        },
+        {
+            "title": "Number theory",
+            "questions": [
+                {"id": "num_theory/div", "points": 1},
+                {"id": "num_theory/divthm2", "points": 1},
+                {"id": "num_theory/bezout", "points": 1},
+                {"id": "num_theory/gcd2", "points": 1}
+            ]
+        },
+        {
+            "title": "Set proofs",
+            "bestQuestions": 2,
+            "maxPoints": 2,
+            "questions": [
+                {"id": "sets/subset1-1", "points": 1},
+                {"id": "sets/subset2-1", "points": 1}
+            ]
+        },
+        {
+            "title": "Number theory proofs",
+            "bestQuestions": 2,
+            "maxPoints": 2,
+            "questions": [
+                {"id": "num_theory/div2-1", "points": 1},
+                {"id": "num_theory/div3-1", "points": 1}
+            ]
+        }
+    ]
+}

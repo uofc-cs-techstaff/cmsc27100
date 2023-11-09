@@ -1,0 +1,49 @@
+{
+    "uuid": "25447d5b-8470-42a7-9bf9-fbfcb58ad386",
+    "type": "Homework",
+    "title": "Modular arithmetic and Combinatorics",
+    "set": "Practice Quiz",
+    "number": "4",
+    "allowAccess": [
+        {
+            "credit": 100,
+            "startDate": "2022-02-02T00:00:01",
+            "endDate": "2022-03-16T23:59:59"
+        },
+        {
+            "uids": ["mkietzman@UCHICAGO.EDU","timng@uchicago.edu"],
+            "credit": 100,
+            "startDate": "2022-01-12T00:00:01",
+            "endDate": "2022-03-24T23:59:59"
+        }
+    ],
+    "shuffleQuestions": true,
+    "zones": [
+        {
+            "title": "More modular arithmetic",
+            "questions": [
+                {"id": "num_theory/crt1", "points": 1},
+                {"id": "num_theory/crt2", "points": 1},
+                {"id": "num_theory/fermat1", "points": 1},
+                {"id": "num_theory/fermat2", "points": 1}
+            ]
+        },
+        {
+            "title": "Combinatorics",
+            "questions": [
+                {"id": "comb/seq1", "points": 1},
+                {"id": "comb/sets1", "points": 1},
+                {"id": "comb/seq4", "points": 1}
+            ]
+        },
+        {
+            "title": "Proof",
+            "bestQuestions": 1,
+            "maxPoints": 1,
+            "questions": [
+                {"id": "comb/proof1-1", "points": 1},
+                {"id": "comb/proof2-1", "points": 1}
+            ]
+        }
+    ]
+}

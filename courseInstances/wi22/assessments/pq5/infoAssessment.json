@@ -1,0 +1,66 @@
+{
+    "uuid": "b5e70a10-3aa5-4861-8d2b-5b77d01cfb8f",
+    "type": "Homework",
+    "title": "More Combinatorics",
+    "set": "Practice Quiz",
+    "number": "5",
+    "allowAccess": [
+        {
+            "credit": 100,
+            "startDate": "2022-02-09T00:00:01",
+            "endDate": "2022-03-16T23:59:59"
+        },
+        {
+            "uids": ["mkietzman@UCHICAGO.EDU","timng@uchicago.edu"],
+            "credit": 100,
+            "startDate": "2022-01-12T00:00:01",
+            "endDate": "2022-03-24T23:59:59"
+        }
+    ],
+    "shuffleQuestions": true,
+     "zones": [
+        {
+            "title": "Repetition",
+            "questions": [
+                {"id": "comb/chess2", "points": 1},
+                {"id": "comb/scrabble1", "points": 1}
+            ]
+        },
+        {
+            "title": "Binomials",
+            "questions": [
+                {"id": "comb/binomial1", "points": 1}
+            ]
+        },
+        {
+            "title": "Pigeonhole",
+            "questions": [
+                {"id": "comb/pigeon3", "points": 1}
+            ]
+        },
+        {
+            "title": "Pigeonhole proof",
+            "bestQuestions": 1,
+            "maxPoints": 1,
+            "questions": [
+                {"id": "comb/pigeon1-1", "points": 1}
+            ]
+        },
+        {
+            "title": "Combinatorial Proof 1",
+            "bestQuestions": 1,
+            "maxPoints": 1,
+            "questions": [
+                {"id": "comb/binom1-1", "points": 1},
+            ]
+        },
+        {
+            "title": "Combinatorial proof 2",
+            "bestQuestions": 1,
+            "maxPoints": 1,
+            "questions": [
+                {"id": "comb/binom2-1", "points": 1}
+            ]
+        }
+    ]
+}

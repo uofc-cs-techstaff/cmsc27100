@@ -1,0 +1,51 @@
+{
+    "uuid": "5bf45e3f-c81e-4d60-9f87-80a4af42c3a9",
+    "type": "Homework",
+    "title": "Prime numbers and modular arithmetic",
+    "set": "Practice Quiz",
+    "number": "3",
+    "allowAccess": [
+        {
+            "credit": 100,
+            "startDate": "2022-01-26T00:00:01",
+            "endDate": "2022-03-16T23:59:59"
+        },
+        {
+            "uids": ["mkietzman@UCHICAGO.EDU","timng@uchicago.edu"],
+            "credit": 100,
+            "startDate": "2022-01-12T00:00:01",
+            "endDate": "2022-03-24T23:59:59"
+        }
+    ],
+    "shuffleQuestions": true,
+    "zones": [
+        {
+            "title": "Strong induction",
+            "bestQuestions": 2,
+            "maxPoints": 2,
+            "questions": [
+                {"id": "proof/str_induction1-1", "points": 1},
+                {"id": "proof/str_induction2-1", "points": 1},
+                {"id": "proof/str_induction4-1", "points": 1}
+            ]
+        },
+         {
+            "title": "Prime numbers",
+            "bestQuestions": 2,
+            "maxPoints": 2,
+            "questions": [
+                {"id": "num_theory/primes1-1", "points": 1},
+                {"id": "num_theory/primes3-1", "points": 1},
+                {"id": "num_theory/primes5-1", "points": 1}
+            ]
+        },
+        {
+            "title": "Modular arithmetic",
+            "questions": [
+                {"id": "num_theory/mod", "points": 1},
+                {"id": "num_theory/mod2", "points": 1},
+                {"id": "num_theory/modinv", "points": 1},
+                {"id": "num_theory/lincong", "points": 1}
+            ]
+        }
+    ]}
