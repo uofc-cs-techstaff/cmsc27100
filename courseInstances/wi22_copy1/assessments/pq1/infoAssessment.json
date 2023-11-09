@@ -1,0 +1,67 @@
+{
+    "uuid": "3fd2bfd1-3566-4948-bf02-ff6573560355",
+    "type": "Homework",
+    "title": "Logic and Proof",
+    "set": "Practice Quiz",
+    "number": "1",
+    "allowAccess": [
+        {
+            "credit": 100,
+            "startDate": "2022-01-12T00:00:01",
+            "endDate": "2022-03-16T23:59:59"
+        },
+        {
+            "uids": ["mkietzman@UCHICAGO.EDU","timng@uchicago.edu"],
+            "credit": 100,
+            "startDate": "2022-01-12T00:00:01",
+            "endDate": "2022-03-24T23:59:59"
+        }
+    ],
+    "shuffleQuestions": true,
+    "zones": [
+        {
+            "title": "Logic",
+            "questions": [
+                {"id": "logic/satisfiability", "points": 1},
+                {"id": "logic/impl", "points": 1},
+                {"id": "logic/negation", "points": 1}
+            ]
+        },
+        {
+            "title": "Proof",
+            "questions": [
+                {
+                    "numberChoose": 1,
+                    "points": 1,
+                    "alternatives": [
+                        {"id": "proof/cont1"},
+                        {"id": "proof/cont2"}
+                    ]
+                },
+                {
+                    "numberChoose": 1,
+                    "points": 1,
+                    "alternatives": [
+                        {"id": "logic/contrapositive"},
+                        {"id": "logic/counterexample"}
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Induction",
+            "questions": [
+                {"id": "induction/nat_defns", "points": 1},
+                {
+                    "numberChoose": 2,
+                    "points": 1,
+                    "alternatives": [
+                        {"id": "proof/induction1"},
+                        {"id": "proof/induction2"},
+                        {"id": "proof/induction3"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

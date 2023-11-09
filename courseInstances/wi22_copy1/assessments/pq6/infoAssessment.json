@@ -1,0 +1,54 @@
+{
+    "uuid": "1d97b59e-4d2e-4b70-836b-c96fca0e6c33",
+    "type": "Homework",
+    "title": "Probability",
+    "set": "Practice Quiz",
+    "number": "6",
+    "allowAccess": [
+        {
+            "credit": 100,
+            "startDate": "2022-02-16T00:00:01",
+            "endDate": "2022-03-16T23:59:59"
+        },
+        {
+            "uids": ["mkietzman@UCHICAGO.EDU","timng@uchicago.edu"],
+            "credit": 100,
+            "startDate": "2022-01-12T00:00:01",
+            "endDate": "2022-03-24T23:59:59"
+        }
+    ],
+    "shuffleQuestions": true,
+     "zones": [
+        {
+            "title": "Basic Probability",
+            "questions": [
+                {"id": "prob/prob1", "points": 1}
+            ]
+        },
+        {
+            "title": "Conditioning and Independence",
+            "questions": [
+                {"id": "prob/cond1", "points": 1},
+                {"id": "prob/bayes1", "points": 1},
+                {"id": "prob/ind1", "points": 1},
+                {"id": "prob/ind2", "points": 1}
+            ]
+        },
+        {
+            "title": "Basic Probability Proof",
+            "bestQuestions": 1,
+            "maxPoints": 1,
+            "questions": [
+                {"id": "prob/proof1-1", "points": 1}
+            ]
+        },
+        {
+            "title": "Conditioning and Independence Proof",
+            "bestQuestions": 1,
+            "maxPoints": 1,
+            "questions": [
+                {"id": "prob/proof3-1", "points": 1}
+            ]
+        }
+    ]
+}

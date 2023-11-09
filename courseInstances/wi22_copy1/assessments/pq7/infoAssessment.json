@@ -1,0 +1,60 @@
+{
+    "uuid": "4297d2c2-119f-49e6-99d2-570e0a621187",
+    "type": "Homework",
+    "title": "Expectation and Graphs",
+    "set": "Practice Quiz",
+    "number": "7",
+    "allowAccess": [
+        {
+            "credit": 100,
+            "startDate": "2022-02-23T00:00:01",
+            "endDate": "2022-03-16T23:59:59"
+        },
+        {
+            "uids": ["mkietzman@UCHICAGO.EDU","timng@uchicago.edu"],
+            "credit": 100,
+            "startDate": "2022-01-12T00:00:01",
+            "endDate": "2022-03-24T23:59:59"
+        }
+    ],
+    "shuffleQuestions": true,
+     "zones": [
+        {
+            "title": "Expectation",
+            "questions": [
+                {"id": "prob/geom1", "points": 1},
+                {"id": "prob/geom2", "points": 1}
+            ]
+        },
+        {
+            "title": "Concentration and tail bounds",
+            "questions": [
+                {"id": "prob/var1", "points": 1},
+                {"id": "prob/var2", "points": 1}
+            ]
+        },
+        {
+            "title": "Graphs",
+            "questions": [
+                {"id": "graph/graph1", "points": 1}
+            ]
+        },
+                {
+            "title": "Expectation Proof 1",
+            "bestQuestions": 1,
+            "maxPoints": 1,
+            "questions": [
+                {"id": "prob/exp1-1", "points": 1}
+            ]
+        },
+        {
+            "title": "Expectation proof 2",
+            "bestQuestions": 1,
+            "maxPoints": 1,
+            "questions": [
+                {"id": "prob/exp2-1", "points": 1}
+            ]
+        }
+
+    ]
+}
