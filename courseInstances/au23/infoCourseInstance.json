@@ -1,68 +1,13 @@
 {
     "uuid": "495cc03b-7efb-4ff1-9939-161781ad2b3d",
-    "shortName": "wi22",
-    "longName": "Winter 2022 (copy 1)",
+    "shortName": "au23",
+    "longName": "Autumn 2023",
     "hideInEnrollPage": true,
     "allowAccess": [
         {
-            "uids": [
-                "afausone@chicagobooth.edu",
-                "ajaseckas@UCHICAGO.EDU",
-                "bbui0@uchicago.edu",
-                "caor@uchicago.edu",
-                "choucc@uchicago.edu",
-                "clin52@uchicago.edu",
-                "cody.puckett@chicagobooth.edu",
-                "ctgallagher@uchicago.edu",
-                "cvf@uchicago.edu",
-                "ebspark1994@UCHICAGO.EDU",
-                "emilyding@uchicago.edu",
-                "eoneil0@uchicago.edu",
-                "ethanho@uchicago.edu",
-                "feihong@uchicago.edu",
-                "gtzortzis@uchicago.edu",
-                "ibarakicj@uchicago.edu",
-                "iprapaprasert@UCHICAGO.EDU",
-                "jchen201@uchicago.edu",
-                "jmunoz2@uchicago.edu",
-                "jzhou23@uchicago.edu",
-                "khuthees@uchicago.edu",
-                "kishikaw@chicagobooth.edu",
-                "kishikaw@uchicago.edu",
-                "lbirch@chicagobooth.edu",
-                "manmart@UCHICAGO.EDU",
-                "matsuya@uchicago.edu",
-                "meilinzhu@uchicago.edu",
-                "mkietzman@UCHICAGO.EDU",
-                "mmackiney@uchicago.edu",
-                "mwzimmerman@uchicago.edu",
-                "mzinski@UCHICAGO.EDU",
-                "nicholasloney@UCHICAGO.EDU",
-                "shrikanth@UCHICAGO.EDU",
-                "ssedovic@UCHICAGO.EDU",
-                "tchon@UCHICAGO.EDU",
-                "thanushrir@uchicago.edu",
-                "wtang10@uchicago.edu",
-                "yichieh@uchicago.edu",
-                "yuan.xia@chicagobooth.edu",
-                "zkhatib@uchicago.edu",
-                "zwang163@uchicago.edu",
-                "goutham@uchicago.edu",
-                "guofen@uchicago.edu",
-                "timng@uchicago.edu"
-            ],
             "institution": "Any",
             "startDate": "2022-01-09T00:00:01",
             "endDate": "2022-03-19T23:59:59"
-        },
-        {
-            "uids": [
-                "mkietzman@UCHICAGO.EDU",
-                "timng@uchicago.edu"
-            ],
-            "institution": "Any",
-            "startDate": "2022-01-09T00:00:01",
-            "endDate": "2022-03-24T23:59:59"
         }
     ]
 }
