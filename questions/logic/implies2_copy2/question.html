@@ -1,0 +1,15 @@
+<pl-question-panel>
+    
+  <p>
+    Let $P$ and $Q$ be predicates. Prove that if $\neg P(y)$ is true, then $\exists x (P(x) \rightarrow Q(y))$.
+  </p>
+  </pl-question-panel>
+
+<pl-order-blocks answers-name="implies2" source-blocks-order="random" grading-method="dag" feedback="first-wrong">
+  <pl-answer correct="true" tag="1" depends=""> Suppose $\neg P(y)$ is true.</pl-answer>
+  <pl-answer correct="true" tag="2" depends="1"> Assume $P(y)$ is true.</pl-answer>
+  <pl-answer correct="true" tag="3" depends="1,2"> This is a contradiction.</pl-answer>
+  <pl-answer correct="true" tag="4" depends="3"> Therefore, we can conclude $Q(y)$.</pl-answer>
+  <pl-answer correct="true" tag="5" depends="2,4"> Thus, we can conclude that $P(y) \rightarrow Q(y)$.</pl-answer>
+  <pl-answer correct="true" tag="6" depends="5"> Therefore, $\exists x (P(x) \rightarrow Q(y))$.</pl-answer>
+</pl-order-blocks>

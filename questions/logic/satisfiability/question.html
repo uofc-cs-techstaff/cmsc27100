@@ -1,0 +1,35 @@
+<pl-question-panel>
+    <p>
+        Select all satisfying assignments for the formula 
+    </p>
+    <p>
+        $\qquad {{params.f}}$
+    </p>
+</pl-question-panel>
+
+<pl-checkbox answers-name='assn' hide-letter-keys="true" fixed-order="true">
+  <pl-answer correct="{{params.ptqtrt}}">
+    $p = T, q = T, r = T$
+  </pl-answer>
+  <pl-answer correct="{{params.ptqtrf}}">
+    $p = T, q = T, r = F$
+  </pl-answer>
+  <pl-answer correct="{{params.ptqfrt}}">
+    $p = T, q = F, r = T$
+  </pl-answer>
+  <pl-answer correct="{{params.ptqfrf}}">
+    $p = T, q = F, r = F$
+  </pl-answer>
+  <pl-answer correct="{{params.pfqtrt}}">
+    $p = F, q = T, r = T$
+  </pl-answer>
+  <pl-answer correct="{{params.pfqtrf}}">
+    $p = F, q = T, r = F$
+  </pl-answer>
+  <pl-answer correct="{{params.pfqfrt}}">
+    $p = F, q = F, r = T$
+  </pl-answer>
+  <pl-answer correct="{{params.pfqfrf}}">
+    $p = F, q = F, r = F$
+  </pl-answer>
+</pl-checkbox>

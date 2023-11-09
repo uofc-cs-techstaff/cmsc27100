@@ -1,0 +1,21 @@
+<pl-question-panel>
+    <p>Reflections are meant to give you an opportunity to reflect on your relationship with the course and the things you're learning. I, the instructor, will be reading and responding to your submissions here, so this will also allow us to establish a dialogue about your learning in this course.</p>
+
+    <p>Completion of reflections is optional. These will be loosely graded on completion/thoughtfulness and not "correctness"; you should aim for about a paragraph or two of thoughtfulness.</p>
+    
+    <ol>
+        <li>What is your background with mathematics? Which mathematical or computer science courses have you previously taken? What are your thoughts and feelings about math?</li>
+        <li>What are your expectations for this class? What do you hope to take away from it? (Please feel free to be honest)</li>
+        <li>If you had to set a few concrete goals for this course, what would they be? (e.g. What do you want to learn or improve on? What kind of grade are you looking for?)</li>
+        <li>Is there anything else you would like me to know at this point?</li>
+    </ol>
+    </pl-question-panel>
+
+<pl-submission-panel>
+  {{#feedback.manual}}
+  <p><em>Response from instructor:</em></p>
+  <markdown>{{{feedback.manual}}}</markdown>
+  {{/feedback.manual}}
+</pl-submission-panel>
+
+<pl-rich-text-editor file-name="refl1.html"> </pl-rich-text-editor>

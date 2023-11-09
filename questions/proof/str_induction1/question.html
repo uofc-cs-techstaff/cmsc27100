@@ -1,0 +1,38 @@
+<pl-question-panel>
+  <p>Prove that every natural number $n \geq 44$ can be written as $n = 20a + 9b + 6c$ for some $a,b,c \in \mathbb N$.
+  </p>
+  <p><em>Note.</em> This is an instance of the <em>Frobenius problem</em>, due to Ferdinand Frobenius in the late 1800s. In general, the Frobenius problem asks, given positive relatively prime integers $x_1, x_2, \dots, x_n$, what is the largest integer not representable as a non-negative integer linear combination of the $x_i$'s. This specific instance is due to Picciotto in the 1980s, when McNuggets in the UK came in boxes of 6, 9, and 20.</p>
+</pl-question-panel>
+
+<pl-answer-panel>
+    <p><em>Hidden.</em></p>
+</pl-answer-panel>
+
+<pl-hide-in-panel answer="true">
+  <pl-order-blocks answers-name="power-set" source-blocks-order="random" grading-method="dag" feedback="first-wrong" solution-placement="bottom">
+    <pl-answer correct="true" tag="1" depends=""  > We will prove this by strong induction on $n$.</pl-answer>
+    <pl-answer correct="true" tag="2" depends="1" > Base case. </pl-answer>
+    <pl-answer correct="true" tag="3" depends="2" > 
+    We have \begin{align*}
+    44 &= 20 \cdot 1 + 9 \cdot 0 + 6 \cdot 4 \\
+    45 &= 20 \cdot 0 + 9 \cdot 3 + 6 \cdot 3 \\
+    46 &= 20 \cdot 2 + 9 \cdot 0 + 6 \cdot 1 \\
+    47 &= 20 \cdot 1 + 9 \cdot 3 + 6 \cdot 0 \\
+    48 &= 20 \cdot 0 + 9 \cdot 0 + 6 \cdot 8 \\
+    49 &= 20 \cdot 2 + 9 \cdot 1 + 6 \cdot 0 \\
+    \end{align*}
+    </pl-answer>
+    <pl-answer correct="true" tag="5" depends="3" > Therefore, the base case holds.</pl-answer>
+    <pl-answer correct="true" tag="6" depends="5" > Inductive case.</pl-answer>
+    <pl-answer correct="true" tag="7" depends="6" > Let $k \in \mathbb N$ with $k \geq 50$.</pl-answer>
+    <pl-answer correct="true" tag="8" depends="7" > Assume that for all $44 \leq j \leq k$ there exist $a,b,c \in \mathbb N$ such that $j = 20a + 9b + 6c$.</pl-answer>
+    <pl-answer correct="true" tag="9" depends="7" > Consider $n = k+1$.</pl-answer>
+    <pl-answer correct="true" tag="10" depends="9" > Since $k \geq 50$, we know $n = k+1 \geq 51$.</pl-answer>
+    <pl-answer correct="true" tag="11" depends="10" > Then $44 \leq k-6 \lt k$.</pl-answer>
+    <pl-answer correct="true" tag="12" depends="8,11" >We can apply our inductive hypothesis to $k-6$. By our inductive hypothesis, there exist natural numbers $a,b,c$ such that $k-6 = 20a + 9b + 6c$.</pl-answer>
+    <pl-answer correct="true" tag="13" depends="12" > Then $k+1 = 20a + 9b + 6(c+1)$.</pl-answer>
+    <pl-answer correct="true" tag="14" depends="13" > Therefore, the inductive case holds.</pl-answer>
+    <pl-answer correct="true" tag="15" depends="14" > Therefore, if $n \geq 44$, there are natural numbers $a,b,c$ such that $n = 20a + 9b + 6c$.</pl-answer>
+    <pl-answer correct="false"> Let $n = 0$.</pl-answer>
+  </pl-order-blocks>
+</pl-hide-in-panel>

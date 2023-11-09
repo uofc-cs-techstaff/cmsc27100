@@ -1,0 +1,31 @@
+<pl-question-panel>
+  <p>Let $p_1, p_2, \dots, p_n$ be propositions for $n \geq 1$. Prove that
+  \[\neg \left( \bigwedge_{i=1}^n p_i \right) = \bigvee_{i=1}^n \neg p_i.\]
+  </p>
+  <p><em>Note.</em> The big $\wedge$ and $\vee$ are analogs of the summation symbol $\sum$ in that we're taking the conjunction or disjunction of the indexed terms. </p>
+</pl-question-panel>
+
+<pl-answer-panel>
+    <p><em>Hidden.</em></p>
+</pl-answer-panel>
+
+<pl-hide-in-panel answer="true">
+  <pl-order-blocks answers-name="power-set" source-blocks-order="random" grading-method="dag" feedback="first-wrong" solution-placement="bottom">
+    <pl-answer correct="true" tag="1" depends=""  > We will prove this by induction on $n$.</pl-answer>
+    <pl-answer correct="true" tag="2" depends="1" > Base case. </pl-answer>
+    <pl-answer correct="true" tag="3" depends="2" > Let $n = 1$.</pl-answer>
+    <pl-answer correct="true" tag="4" depends="3" > Then $\neg \left( \bigwedge\limits_{i=1}^1 p_i \right) = \neg p_1 = \bigvee\limits_{i=1}^1 \neg p_i$.</pl-answer>
+    <pl-answer correct="true" tag="5" depends="4" > Therefore, the base case holds.</pl-answer>
+    <pl-answer correct="true" tag="6" depends="5" > Inductive case.</pl-answer>
+    <pl-answer correct="true" tag="7" depends="6" > Let $k \in \mathbb N$.</pl-answer>
+    <pl-answer correct="true" tag="8" depends="7" > Assume that $\neg \left( \bigwedge\limits_{i=1}^k p_i \right) = \bigvee\limits_{i=1}^k \neg p_i$.</pl-answer>
+    <pl-answer correct="true" tag="9" depends="7" > Consider $n = k+1$.</pl-answer>
+    <pl-answer correct="true" tag="10" depends="9" > Then $\neg \left( \bigwedge\limits_{i=1}^{k+1} p_i \right) = \neg \left( \bigwedge\limits_{i=1}^{k} p_i \wedge p_{k+1} \right)$.</pl-answer>
+    <pl-answer correct="true" tag="11" depends="10" > By De Morgan's laws, $\neg \left( \bigwedge\limits_{i=1}^{k} p_i \wedge p_{k+1} \right) = \neg \left( \bigwedge\limits_{i=1}^{k} p_i \right) \vee \neg p_{k+1}$.</pl-answer>
+    <pl-answer correct="true" tag="12" depends="8,11" > By our inductive hypothesis, $\neg \left( \bigwedge\limits_{i=1}^{k} p_i \right) \vee \neg p_{k+1} = \bigvee\limits_{i=1}^{k} \neg p_i \vee \neg p_{k+1}$.</pl-answer>
+    <pl-answer correct="true" tag="13" depends="12" > Then $\bigvee\limits_{i=1}^{k} \neg p_i \vee \neg p_{k+1} =  \bigvee\limits_{i=1}^{k+1} \neg p_i$.</pl-answer>
+    <pl-answer correct="true" tag="14" depends="13" > Therefore, the inductive case holds.</pl-answer>
+    <pl-answer correct="true" tag="15" depends="14" > Therefore, $\neg \left( \bigwedge\limits_{i=1}^n p_i \right) = \bigvee\limits_{i=1}^n \neg p_i$ holds for all $n \in \mathbb N$.</pl-answer>
+    <pl-answer correct="false"> Let $n = 0$.</pl-answer>
+  </pl-order-blocks>
+</pl-hide-in-panel>

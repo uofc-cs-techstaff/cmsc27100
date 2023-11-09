@@ -1,0 +1,17 @@
+<pl-question-panel>
+    <p>Which of the following are {{params.not}} always true?</p>
+</pl-question-panel>
+<pl-checkbox answers-name='tautology' hide-answer-panel="true">
+  <pl-answer correct="{{params.t}}">
+    $((p \rightarrow q) \wedge p) \rightarrow q$
+  </pl-answer>
+  <pl-answer correct="{{params.f}}">
+    $((p \rightarrow q) \wedge \neg p) \rightarrow \neg q$
+  </pl-answer>
+  <pl-answer correct="{{params.f}}">
+    $((p \rightarrow q) \wedge q) \rightarrow p$
+  </pl-answer>
+    <pl-answer correct="{{params.t}}">
+    $((p \rightarrow q) \wedge \neg q) \rightarrow \neg p$
+  </pl-answer>
+</pl-checkbox>

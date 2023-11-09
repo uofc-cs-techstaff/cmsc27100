@@ -1,0 +1,12 @@
+<pl-question-panel>
+    <p>Which of the following graphs are isomorphic with each other?</p>
+    
+    <pl-checkbox answers-name="is" number-answers="4" min-correct="2">
+    <pl-answer><pl-graph engine="dot">{{params.g0}}</pl-graph></pl-answer>
+    <pl-answer><pl-graph engine="neato">{{params.g1}}</pl-graph></pl-answer>
+    <pl-answer><pl-graph engine="fdp">{{params.g2}}</pl-graph></pl-answer>
+    <pl-answer><pl-graph engine="twopi">{{params.g3}}</pl-graph></pl-answer>
+    <pl-answer correct="true"><pl-graph engine="circo">{{params.g4}}</pl-graph></pl-answer>
+    <pl-answer correct="true"><pl-graph engine="dot">{{params.g5}}</pl-graph></pl-answer>
+    </pl-checkbox>
+</pl-question-panel>

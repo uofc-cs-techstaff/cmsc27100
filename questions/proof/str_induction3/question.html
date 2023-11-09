@@ -1,0 +1,31 @@
+<pl-question-panel>
+  <p>Recall that we can view string concatenation as a non-commutative analogue of multiplication. That is, for two strings $x,y$ , it is not necessarily the case that $x \cdot y = y \cdot x$. Therefore, it makes sense to ask the question: When does $xy = yx$? The following is a result of Lyndon and Schützenberger, which says that $xy = yx$ if both $x$ and $y$ are repeated concatenations (or <em>powers</em>) of the same word. Informally, for a string $w$ and natural number $k$, we write $w^k = \underbrace{ww \cdots w}_{k \text{ times}}$.</p>
+
+  <p>Let $x$ and $y$ be non-empty strings. Prove that if $xy = yx$, then there exists a string $z$ and integers $k, \ell \gt 0$ such that $x = z^k$ and $y = z^\ell$.</p>
+</pl-question-panel>
+
+<pl-answer-panel>
+    <p><em>Hidden.</em></p>
+</pl-answer-panel>
+
+<pl-hide-in-panel answer="true">
+  <pl-order-blocks answers-name="power-set" source-blocks-order="random" grading-method="dag" feedback="first-wrong" solution-placement="bottom">
+    <pl-answer correct="true" tag="1" depends=""  > We will prove this by strong induction on $n = |xy|$.</pl-answer>
+    <pl-answer correct="true" tag="2" depends="1" > Base case. </pl-answer>
+    <pl-answer correct="true" tag="3" depends="2" > Since $x$ and $y$ are non-empty, we consider $|x| = 1$ and $|y| = 1$, so $n = |xy| = 2$.</pl-answer>
+    <pl-answer correct="true" tag="4" depends="3" > This means that $x = y$.</pl-answer>
+    <pl-answer correct="true" tag="5" depends="4" > Therefore, $z = x = y$ and $k = \ell = 1$.</pl-answer>
+    <pl-answer correct="true" tag="6" depends="5" > Therefore, the base case holds.</pl-answer>
+    <pl-answer correct="true" tag="7" depends="6" > Inductive case.</pl-answer>
+    <pl-answer correct="true" tag="8" depends="7" > Let $k \in \mathbb N$.</pl-answer>
+    <pl-answer correct="true" tag="9" depends="7" > Assume that the result holds for all $x$ and $y$ with $0 \leq |xy| \leq k$.</pl-answer>
+    <pl-answer correct="true" tag="10" depends="9" > Consider $n = |xy| = k+1$.</pl-answer>
+    <pl-answer correct="true" tag="11" depends="10" > Without loss of generality, we take $|x| \geq |y|$.</pl-answer>
+    <pl-answer correct="true" tag="12" depends="11" >Then there exists a string $w$ such that $x = wy = yw$ <em>(this is not obvious, but we state this without proof)</em>.</pl-answer>
+    <pl-answer correct="true" tag="14" depends="13" > If $w$ is empty, then $x = y$ and therefore, $z = x = y$ and $k = \ell = 1$.</pl-answer>
+    <pl-answer correct="true" tag="14" depends="13" > If $w$ is not empty, then $|wy| \lt k+1$.</pl-answer>
+    <pl-answer correct="true" tag="15" depends="14" > By our inductive hypothesis, there exists a string $z$ with integers $k,\ell \gt 0$ such that $w = z^k$ and $y = z^\ell$.</pl-answer>
+    <pl-answer correct="true" tag="15" depends="14" > Therefore, $x = wy = z^{k+\ell}$ and $y = z^\ell$.</pl-answer>
+    <pl-answer correct="true" tag="6" depends="5" > Therefore, the inductive case holds.</pl-answer>
+  </pl-order-blocks>
+</pl-hide-in-panel>

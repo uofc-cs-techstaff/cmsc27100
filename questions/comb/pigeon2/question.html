@@ -1,0 +1,27 @@
+<pl-question-panel>
+    
+  <p>Everyone who works or studies at the University of Chicago has a ChicagoID, which is a 9-character string consisting of 8 numerals followed by an alphabetic character. Suppose everyone currently enrolled in MPCS 50103, which is 39 students, summed up the numeric digits of their ChicagoID.</p>
+  <p>Are two students guaranteed to have the same sum? If yes, prove it. If not, determine what the minimum number of students would need to be in order to guarantee this.</p>
+  </pl-question-panel>
+  
+  <pl-answer-panel>
+    <p><em>Hidden.</em></p>
+</pl-answer-panel>
+
+<pl-hide-in-panel answer="true">
+  <pl-order-blocks answers-name="even-implies-odd" source-blocks-order="random" grading-method="dag" feedback="first-wrong" solution-placement="bottom" partial-credit="none">
+    <pl-answer correct="true" tag="2" depends="" > We are trying to match each student to the sum of eight numeric digits.</pl-answer>
+    <pl-answer correct="true" tag="3" depends="2" > Since each digit ranges from 0 to 9, the possible sums range from 0 to $8 \times 9 = 72$. </pl-answer>
+    <pl-answer correct="true" tag="4" depends="3" > Therefore, there are 73 possible sums.</pl-answer>
+    <pl-answer correct="true" tag="5" depends="4" > Since there are 39 students enrolled, each student can have a unique sum.</pl-answer>
+    <pl-answer correct="true" tag="6" depends="5" > To guarantee that there are two students who have the same sum, we need strictly more students than possible sums.</pl-answer>
+    <pl-answer correct="true" tag="7" depends="6" > Since there are 73 possible sums, we require 74 students.</pl-answer>
+    <pl-answer correct="false"> Since each digit ranges from 0 to 9, there are $10^8$ possible sums.</pl-answer>
+    <pl-answer correct="false"> Since there are $10^8$ possible sums, we require $10^8 + 1$ students.</pl-answer>
+    <pl-answer correct="false"> Since each digit ranges from 0 to 9, there are $\binom 9 8 = 9$ possible sums.</pl-answer>
+    <pl-answer correct="false"> Since there are only 39 students enrolled, there must be at least two students with the same sum.</pl-answer>
+
+    
+
+  </pl-order-blocks>
+ </pl-hide-in-panel>

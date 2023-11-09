@@ -1,0 +1,20 @@
+<pl-question-panel>
+    
+  <p>Prove that for any graph $G$, the number of vertices of odd degree in $G$ is even.</p>
+  </pl-question-panel>
+  
+  <pl-answer-panel>
+    <p><em>Hidden.</em></p>
+</pl-answer-panel>
+
+<pl-hide-in-panel answer="true">
+  <pl-order-blocks answers-name="even-implies-odd" source-blocks-order="random" grading-method="dag" feedback="first-wrong" solution-placement="bottom" partial-credit="none">
+    <pl-answer correct="true" tag="2" depends="" > Let $V_{odd}, V_{even} \subseteq V$ be the sets of odd and even degree vertices of $G$, respectively.</pl-answer>
+    <pl-answer correct="true" tag="3" depends="2" > By the Handshaking lemma, \[2|E| = \sum_{v \in V_{odd}} \deg(v) + \sum_{v \in V_{even}} \deg(v).\] </pl-answer>
+    <pl-answer correct="true" tag="4" depends="3" >By definition, $\deg(v)$ is even for all $v \in V_{even}$.</pl-answer>
+    <pl-answer correct="true" tag="5" depends="4" > Therefore, $\sum\limits_{v \in V_{even}} \deg(v)$ is even.</pl-answer>
+    <pl-answer correct="true" tag="6" depends="5" > Since $\sum\limits_{v \in V_{even}} \deg(v)$ is even and $2|E|$ is even, $\sum\limits_{v \in V_{odd}} \deg(v)$ is even.</pl-answer>
+    <pl-answer correct="true" tag="7" depends="6" > But $\deg(v)$ is odd for all $v \in V_{odd}$, so $|V_1|$ must be even.</pl-answer>
+
+  </pl-order-blocks>
+ </pl-hide-in-panel>

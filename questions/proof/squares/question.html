@@ -1,0 +1,16 @@
+<pl-question-panel>
+    
+  <p>
+    We say that an integer $a$ is a <strong>perfect square</strong> if there exists an integer $b$ such that $a = b^2$. Prove that if $m$ and $n$ are perfect squares, then $m \cdot n$ is also a perfect square.
+  </p>
+  </pl-question-panel>
+
+  <pl-order-blocks answers-name="even-implies-odd" source-blocks-order="random" grading-method="dag" feedback="first-wrong" solution-placement="bottom">
+    <pl-answer correct="true" tag="1" depends=""  > Suppose $m$ is a perfect square.</pl-answer>
+    <pl-answer correct="true" tag="2" depends="1" > There exists an integer $s$ such that $m = s^2$. </pl-answer>
+    <pl-answer correct="true" tag="3" depends="" > Suppose $n$ is a perfect square. </pl-answer>
+    <pl-answer correct="true" tag="4" depends="3" > There exists an integer $t$ such that $n = t^2$.</pl-answer>
+    <pl-answer correct="true" tag="5" depends="2,4" > Then $m \cdot n = s^2 \cdot t^2 = (s \cdot s) (t \cdot t) = (s \cdot t) (s \cdot t) = (s \cdot t)^2$.</pl-answer>
+    <pl-answer correct="true" tag="6" depends="2,4" > Since $s$ and $t$ are integers, $s \cdot t$ is an integer.</pl-answer>
+    <pl-answer correct="true" tag="7" depends="6" > Since $s \cdot t$ is an integer, $m \cdot n$ is a perfect square.</pl-answer>
+  </pl-order-blocks>

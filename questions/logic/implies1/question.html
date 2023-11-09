@@ -1,0 +1,16 @@
+<pl-question-panel>
+    
+  <p>
+    Let $p$, $q$, and $r$ be propositions. Prove that if $r \rightarrow p \land q$ and $\neg q$, then $\neg r$.
+  </p>
+  </pl-question-panel>
+
+<pl-order-blocks answers-name="implies1" source-blocks-order="random" grading-method="dag" feedback="first-wrong">
+  <pl-answer correct="true" tag="1" depends=""> Suppose $r \rightarrow p \land q$ is true.</pl-answer>
+  <pl-answer correct="true" tag="2" depends=""> Assume $r$ is true.</pl-answer>
+  <pl-answer correct="true" tag="3" depends=""> Suppose $\neg q$ is true.</pl-answer>
+  <pl-answer correct="true" tag="4" depends="1,2"> Since $r$ is true and $r \rightarrow p \land q$ is true, we can conclude that $p \land q$ is true.</pl-answer>
+  <pl-answer correct="true" tag="5" depends="4"> Since $p \land q$ is true we know $q$ is true.</pl-answer>
+  <pl-answer correct="true" tag="6" depends="3,5"> But we have that $q$ is true and $\neg q$ is true, which is a contradiction.</pl-answer>
+  <pl-answer correct="true" tag="7" depends="2,6"> Therefore, our assumption was incorrect and $\neg r$ must be true.</pl-answer>
+</pl-order-blocks>

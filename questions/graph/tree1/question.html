@@ -1,0 +1,30 @@
+<pl-question-panel>
+    
+  <p>Let $T$ be a tree with more than one vertex. Then $T$ contains at least two leaves.</p>
+  </pl-question-panel>
+  
+  <pl-answer-panel>
+    <p><em>Hidden.</em></p>
+</pl-answer-panel>
+
+<pl-hide-in-panel answer="true">
+  <pl-order-blocks answers-name="even-implies-odd" source-blocks-order="random" grading-method="dag" feedback="first-wrong" solution-placement="bottom" partial-credit="none">
+    <pl-answer correct="true" tag="2" depends="" > Consider a longest path in $T$. Let $u$ be a vertex at one end of this path.</pl-answer>
+    <pl-block-group tag="a" depends="2">
+    <pl-answer correct="true" tag="3" depends="" >Suppose there is an edge between $u$ and a vertex $w$ not on the path.</pl-answer>
+    <pl-answer correct="true" tag="4" depends="3" >Then we can make an even longer path, to $w$, contradicting maximality of our path.</pl-answer>
+    <pl-answer correct="true" tag="5" depends="4" > Therefore, the edge $(u,w)$ cannot exist.</pl-answer>
+    </pl-block-group>
+    <pl-block-group tag="b" depends="2">
+    <pl-answer correct="true" tag="6" depends="" > Since there is more than one vertex in $T$, our path must contain an edge $(u,v)$.</pl-answer>
+    <pl-answer correct="true" tag="7" depends="6" > The edge $(u,v)$ is the last edge on our path.</pl-answer>
+    <pl-answer correct="true" tag="8" depends="7" > Suppose there is an edge between $u$ and a vertex $x \neq v$ on the path.</pl-answer>
+    <pl-answer correct="true" tag="9" depends="8" > Then there is a cycle: take the edge from $x$ to $u$, then from $u$ to $v$, then from $v$ to $x$.</pl-answer>
+    <pl-answer correct="true" tag="10" depends="9" > Therefore, the edge $(u,x)$ cannot exist.</pl-answer>
+    </pl-block-group>
+    <pl-answer correct="true" tag="11" depends="a,b" > Therefore, $v$ is the only vertex adjacent to $u$.</pl-answer>
+    <pl-answer correct="true" tag="12" depends="11" > Therefore, $\deg(u) = 1$.</pl-answer>
+    <pl-answer correct="true" tag="13" depends="12" > We apply a similar argument to the vertex on the other end of the path to get our second vertex of degree 1.</pl-answer>
+
+  </pl-order-blocks>
+ </pl-hide-in-panel>

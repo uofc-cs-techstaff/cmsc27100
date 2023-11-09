@@ -1,0 +1,33 @@
+<pl-question-panel>
+    
+  <p>
+    Prove that there are infinitely many prime of the form $4k+3$ for $k \in \mathbb N$.
+  </p>
+  </pl-question-panel>
+  
+  <pl-answer-panel>
+    <p><em>Hidden.</em></p>
+</pl-answer-panel>
+
+<pl-hide-in-panel answer="true">
+  <pl-order-blocks answers-name="even-implies-odd" source-blocks-order="random" grading-method="dag" feedback="first-wrong" solution-placement="bottom" partial-credit="none">
+    <pl-answer correct="true" tag="1" depends=""  > Suppose there are finitely many primes of the form $4k+3$.</pl-answer>
+    <pl-answer correct="true" tag="2" depends="1" > Then we can enumerate all primes of the form $4k+3$: $p_1, p_2, \dots, p_n$.</pl-answer>
+    <pl-answer correct="true" tag="3" depends="2" > Consider the number $N = 4p_1 \cdots p_n - 1$, which is a number of the form $4k+3$, with $k = p_1 \cdots p_k - 1$. </pl-answer>
+    <pl-block-group depends="3" tag="a">
+        <pl-answer correct="true" tag="5" depends="" > If $N$ is prime, then $N$ is a prime of the form $4k+3$.</pl-answer>
+        <pl-answer correct="true" tag="6" depends="5" > But $N$ cannot be one of $p_1, \cdots, p_n$, which contradicts our assumption that these were the only primes of the form $4k+3$.</pl-answer>
+    </pl-block-group>
+    <pl-block-group depends="3" tag="b">
+        <pl-answer correct="true" tag="7" depends="" > Suppose $N$ is composite.</pl-answer>
+        <pl-answer correct="true" tag="8" depends="7" > Then the prime factors of $N$ cannot be $p_1, \dots, p_n$, since dividing $N$ by any $p_i$ admits a remainder of $p_i - 1 \neq 0$.</pl-answer>
+        <pl-answer correct="true" tag="9" depends="7" > Since $N$ is odd, it must have an odd prime factor, which is of the form $4k+1$ or $4k+3$.</pl-answer>
+        <pl-answer correct="true" tag="10" depends="8,9" > Then all prime factors of $N$ must be of the form $4k+1$.</pl-answer>
+        <pl-answer correct="true" tag="11" depends="10" > But the product of two primes of the form $4k+1$ is a number of the form $4k+1$, since $(4\ell+1)(4m+1) = 4(4\ell m + \ell + m) + 1$.</pl-answer>
+        <pl-answer correct="true" tag="12" depends="11" > Therefore, $N$ must have a prime factor of the form $4k+3$ not in the list $p_1, \dots, p_n$.</pl-answer>
+        <pl-answer correct="true" tag="13" depends="12" > But this is a contradiction of our assumption that the only primes of the form $4k+3$ are $p_1, \dots, p_n$.</pl-answer>
+    </pl-block-group>
+    <pl-answer correct="true" tag="14" depends="a,b" > Therefore, our assumption was incorrect and there are infinitely many primes of the form $4k+3$.</pl-answer>
+
+  </pl-order-blocks>
+ </pl-hide-in-panel>

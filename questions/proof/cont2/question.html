@@ -1,0 +1,24 @@
+<pl-question-panel>
+    
+  <p>
+    Use a proof by contradiction to show that if $n$ is an integer and $3n+2$ is even, then $n$ is even.
+  </p>
+  </pl-question-panel>
+  
+  <pl-answer-panel>
+    <p><em>Hidden.</em></p>
+</pl-answer-panel>
+
+<pl-hide-in-panel answer="true">
+  <pl-order-blocks answers-name="even-implies-odd" source-blocks-order="random" grading-method="dag" feedback="first-wrong" solution-placement="bottom">
+    <pl-answer correct="true" tag="1" depends=""  > Let $n$ be an arbitrary integer.</pl-answer>
+    <pl-answer correct="true" tag="2" depends="1" > Assume that $n$ is odd. </pl-answer>
+    <pl-answer correct="true" tag="3" depends="1" > Suppose that $3n+2$ is even. </pl-answer>
+    <pl-answer correct="true" tag="4" depends="2" > We can write $n = 2m+1$ for some integer $m$.</pl-answer>
+    <pl-answer correct="true" tag="5" depends="3,4" > Then $3n+2 = 3(2m+1)+2 = 6m+3+2 = 6m+4+1 = 2(3m+2)+1$</pl-answer>
+    <pl-answer correct="true" tag="6" depends="5" > Since $3n+2 = 2(3m+2)+1$ and $3m+2$ is an integer, we can conclude that $3n+2$ is odd.</pl-answer>
+    <pl-answer correct="true" tag="7" depends="3,6" > However, we assumed that $3n+2$ is even.</pl-answer>
+    <pl-answer correct="true" tag="8" depends="7" > Therefore, our assumption that $n$ is odd was incorrect.</pl-answer>
+    <pl-answer correct="true" tag="9" depends="8" > Therefore, $n$ is even.</pl-answer>
+  </pl-order-blocks>
+</pl-hide-in-panel>

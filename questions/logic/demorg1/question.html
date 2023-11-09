@@ -1,0 +1,14 @@
+<pl-question-panel>
+    
+  <p>
+    Let $p$ and $q$ be propositions. Prove that if $p \wedge q$, then $q \wedge p$.
+  </p>
+  </pl-question-panel>
+
+<pl-order-blocks answers-name="proof-by-cases" source-blocks-order="random" grading-method="dag">
+  <pl-answer correct="true" tag="1" depends=""  > Suppose $p \land q$ is true.</pl-answer>
+  <pl-answer correct="true" tag="2" depends="1"> Since $p \land q$ is true, we know $p$ is true.</pl-answer>
+  <pl-answer correct="true" tag="3" depends="1"> Since $p \land q$ is true, we know $q$ is true.</pl-answer>
+  <pl-answer correct="true" tag="4" depends="1,2"> Since $q$ is true and $p$ is true, we know $q \land p$ is true.</pl-answer>
+ 
+</pl-order-blocks>

@@ -1,0 +1,10 @@
+<pl-question-panel>
+    <p>Recall Bézout's lemma: <em>For all integers $m$ and $n$, there exist integers $a$ and $b$ such that $\gcd(m,n) = a \cdot m + b \cdot n$.</em></p>
+    
+    <p>A common pitfall in applying this theorem is that students often take the converse to be true—that if there exist integers $a$ and $b$ such that $d = a \cdot m + b \cdot n$, then $d = \gcd(m,n)$.</p>
+  <p> Show that this is not true. Let $m = {{params.m}}$ and $n = {{params.n}}$. Give an example of integers $a,b,c$ such that $c = a \cdot m + b \cdot n$, but $c$ is not the greatest common divisor of $a$ and $b$.</p>
+</pl-question-panel>
+
+<pl-integer-input answers-name="a" label="$a=$"></pl-integer-input>
+<pl-integer-input answers-name="b" label="$b=$"></pl-integer-input>
+<pl-integer-input answers-name="c" label="$c=$"></pl-integer-input>

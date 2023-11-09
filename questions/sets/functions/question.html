@@ -1,0 +1,11 @@
+<pl-question-panel>
+  <p> Consider two sets $A = {{params.a}}$ and $B = {{params.b}}$. </p>
+  <p> Let $f : A \to B$ be a function. We don't know what $f$ is, but based on its domain and range, which of the following properties <em>might</em> $f$ have?</p>
+</pl-question-panel>
+
+<pl-checkbox answers-name="select" hide-letter-keys="true" fixed-order="true">
+    <pl-answer correct={{params.ans0}}>  {{params.text0}} </pl-answer>
+    <pl-answer correct={{params.ans1}}>  {{params.text1}} </pl-answer>
+    <pl-answer correct={{params.ans2}}>  {{params.text2}} </pl-answer>
+    <pl-answer correct="false">  None of the above </pl-answer>
+</pl-checkbox>

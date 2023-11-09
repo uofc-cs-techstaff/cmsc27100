@@ -1,0 +1,29 @@
+<pl-question-panel>
+  <p>Denote the Fibonacci numbers by $\{f_n\}_{n \geq 0}$. </p>
+  <p>Prove that $f_{n+m} = f_m f_{n+1} + f_{m-1} f_n$ for all $n \geq 0$ and $m \geq 1$.</p>
+</pl-question-panel>
+
+<pl-answer-panel>
+    <p><em>Hidden.</em></p>
+</pl-answer-panel>
+
+<pl-hide-in-panel answer="true">
+  <pl-order-blocks answers-name="power-set" source-blocks-order="random" grading-method="dag" feedback="first-wrong" solution-placement="bottom">
+    <pl-answer correct="true" tag="1" depends=""  > Let $n$ be an arbitrary natural number.</pl-answer>
+    <pl-answer correct="true" tag="2" depends="" > We will prove this by induction on $m$. </pl-answer>
+    <pl-answer correct="true" tag="3" depends="1,2" > Base case.</pl-answer>
+    <pl-answer correct="true" tag="4" depends="3" > Let $m = 1$.</pl-answer>
+    <pl-answer correct="true" tag="5" depends="4" > Then $f_{n+m} = f_{n+1} = f_1 f_{n+1} + f_0 f_n = 1 \cdot f_{n+1} + 0 \cdot f_n = f_{n+1}$.</pl-answer>
+    <pl-answer correct="true" tag="6" depends="5" > Therefore, the base case holds.</pl-answer>
+    <pl-answer correct="true" tag="7" depends="6" > Inductive case.</pl-answer>
+    <pl-answer correct="true" tag="8" depends="7" > Let $k \in \mathbb N$.</pl-answer>
+    <pl-answer correct="true" tag="9" depends="8" > Assume that $f_{n+i} = f_i f_{n+1} + f_{i-1} f_n$ holds for all $i$ with $1 \leq i \leq k$.</pl-answer>
+    <pl-answer correct="true" tag="10" depends="9" > Consider $m = k+1$.</pl-answer>
+    <pl-answer correct="true" tag="11" depends="10" > Then $f_{n+m} = f_{n+(m-1)} + f_{n+(m-2)}$ by definition of the Fibonacci numbers.</pl-answer>
+    <pl-answer correct="true" tag="12" depends="9,11" > By our inductive hypothesis, $f_{n+(m-1)} = f_{m-1} f_n + f_{n+1} f_{m-2}$ and $f_{n+(m-2)} = f_{m-2} f_n + f_{n+1} f_{m-3}$.</pl-answer>
+    <pl-answer correct="true" tag="13" depends="12" > By factoring, we have \begin{align*} f_{n+(m-1)} + f_{n+(m-2)} &= f_{m-1} f_n + f_{n+1} f_{m-2} + f_{m-2} f_n + f_{n+1} f_{m-3} \\ &= (f_{m-1} + f_{m-2}) f_{n+1} + (f_{m-2} + f_{m-3}) f_n \end{align*}</pl-answer>
+    <pl-answer correct="true" tag="14" depends="13" > By definition of the Fibonacci numbers, $(f_{m-1} + f_{m-2}) f_{n+1} + (f_{m-2} + f_{m-3}) f_n = f_m f_{n+1} + f_{m-1} f_n$.</pl-answer>
+    <pl-answer correct="true" tag="15" depends="14" > Therefore, the inductive case holds.</pl-answer>
+    <pl-answer correct="true" tag="16" depends="15" > Therefore, we have shown that $f_{n+m} = f_m f_{n+1} + f_{m-1} f_n$ by induction.</pl-answer>
+  </pl-order-blocks>
+</pl-hide-in-panel>

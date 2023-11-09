@@ -1,0 +1,24 @@
+<pl-question-panel>
+    <p>Everyone loves the hot new internet word game Wordle. In Wordle, the player guesses a five letter word, and the tiles will change colour:
+    </p>
+    <ul>
+    <li>If the tile is green, then the letter is in the answer and in the correct spot</li>
+    <li>If the tile is yellow, then the letter is in the answer but in the wrong spot</li>
+    <li>If the tile is grey, then the letter is not in the answer in any spot</li>
+    </ul>
+    <p>However, we will be considering a more fun and easy version made just for combinatorialists. Instead of restricting answers to five letter words, we allow any five character string, made up of letters A through Z.</p>
+    
+    <p>Suppose our first guess is the following:</p>
+    
+    <table style="border-spacing: 10px"><tr>
+        <td style="border: thin solid grey; background: {{params.col1}}; color: white; padding: 0.5em 1em;">{{params.a1}}</td>
+        <td style="border: thin solid grey; background: {{params.col2}}; color: white; padding: 0.5em 1em">{{params.a2}}</td>
+        <td style="border: thin solid grey; background: {{params.col3}}; color: white; padding: 0.5em 1em">{{params.a3}}</td>
+        <td style="border: thin solid grey; background: {{params.col4}}; color: white; padding: 0.5em 1em">{{params.a4}}</td>
+        <td style="border: thin solid grey; background: {{params.col5}}; color: white; padding: 0.5em 1em">{{params.a5}}</td>
+    </tr></table>
+    
+    <p>How many possible correct answers are there based only on this guess?</p>
+</pl-question-panel>
+
+<pl-integer-input answers-name="c"></pl-integer-input>
