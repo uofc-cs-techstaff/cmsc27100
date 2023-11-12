@@ -7,7 +7,7 @@ from networkx.drawing.nx_agraph import write_dot
 from networkx.algorithms.shortest_paths.generic import shortest_path_length
 
 def generate(data):
-    n = random.randint(5,12)
+    n = random.randint(5,11)
 
     #G = fast_gnp_random_graph(n,0.5)
     deg = random.randint(2,n-2)
