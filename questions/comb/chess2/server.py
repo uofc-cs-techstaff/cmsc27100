@@ -1,4 +1,5 @@
 import random, copy
+import prairielearn as pl
 from sympy.functions.combinatorial.numbers import nC 
 from sympy import sympify
 
