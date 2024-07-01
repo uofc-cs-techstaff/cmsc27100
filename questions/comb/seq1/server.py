@@ -1,4 +1,6 @@
+import prairielearn as pl
 import random, copy
+from sympy import sympify
 
 def generate(data):
 
@@ -20,9 +22,9 @@ def generate(data):
     if version == "grey":
         rem = cols.count("grey")
         alphs = 26 - rem
-        data['correct_answers']['c'] = alphs ** rem
+        data['correct_answers']['c'] = pl.to_json(sympify(alphs ** rem))
     else:
-        data['correct_answers']['c'] = 0
+        data['correct_answers']['c'] = pl.to_json(sympify(0))
     
     
 
