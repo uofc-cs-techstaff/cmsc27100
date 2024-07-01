@@ -1,4 +1,6 @@
 import random, copy
+import prairielearn as pl
+from sympy import sympify
 from sympy.functions.combinatorial.numbers import nC 
 
 def generate(data):
@@ -19,4 +21,4 @@ def generate(data):
         
 
     # Put the sum into data['correct_answers']
-    data['correct_answers']['c'] = res
+    data['correct_answers']['c'] = pl.to_json(sympify(res))
