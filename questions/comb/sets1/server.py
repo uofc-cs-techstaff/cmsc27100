@@ -39,12 +39,12 @@ def generate(data):
     if ind == 0:
         scen = ["ways to choose ", "ways to select "]
         data['params']['instruction'] = random.choice(scen) + " " + str(r) + " elements from $C$ "
-        data['correct_answers']['c'] = nC(n,r)
+        data['correct_answers']['c'] = pl.to_json(nC(n,r))
     elif ind == 1:
         scen = ["ways to arrange ", "ways to order "]
         data['params']['instruction'] = random.choice(scen) + " " + str(r) + " elements from $C$ "
-        data['correct_answers']['c'] = nP(n,r)
+        data['correct_answers']['c'] = pl.to_json(nP(n,r))
     elif ind == 2:
         r = random.randint(4,9)
         data['params']['instruction'] = "strings of length " + str(r) + " made up of characters from $C$ "
-        data['correct_answers']['c'] = sympify(n ** r)
+        data['correct_answers']['c'] = pl.to_json(sympify(n ** r))
