@@ -1,5 +1,7 @@
+import prairielearn as pl
 import random, copy
 from sympy.functions.combinatorial.numbers import nC, nP
+from sympy import sympify
 
 def generate(data):
 
@@ -14,7 +16,5 @@ def generate(data):
     
     data['params']['pieces'] = str_a
     
-    if pieces == pieces1 or pieces == pieces3:
-        data['correct_answers']['c'] = int(nC(64,l))
-    else:
-        data['correct_answers']['c'] = int(nP(64,l))
+    data['correct_answers']['c'] = pl.to_json(nC(64,l)) if pieces == pieces1 or pieces == pieces3 else pl.to_json(nP(64,l))
+    
