@@ -1,5 +1,6 @@
 import random, copy
 from sympy.functions.combinatorial.numbers import nC 
+from sympy import sympify
 
 def generate(data):
 
@@ -19,4 +20,4 @@ def generate(data):
         
 
     # Put the sum into data['correct_answers']
-    data['correct_answers']['c'] = res
+    data['correct_answers']['c'] = pl.to_json(sympify(res))
